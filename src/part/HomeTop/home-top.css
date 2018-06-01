@@ -1,5 +1,5 @@
 .m_hometop{
-    height: 64px;
+    height: 54px;
 }
 .m_hometop .topfix {
     position: fixed;
@@ -17,7 +17,7 @@
     align-items: center;
     padding: 0 10px;
     width: 100%;
-    height: 64px;
+    height: 54px;
     background-color: #d43c33;
     box-sizing: border-box;
 }

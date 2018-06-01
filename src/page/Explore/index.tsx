@@ -10,7 +10,6 @@ export default class ExplorePage extends React.Component<any, any>{
         return(
             <div>
                 <ExploreTopic />
-                <ExploreLocal />
             </div>
         )
     }

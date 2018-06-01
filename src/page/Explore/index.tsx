@@ -1,16 +1,9 @@
 import * as React from 'react';
+import * as Loadable from 'react-loadable';
 
-import ExploreTopic from './ExploreTopic';
-import ExploreLocal from './ExploreLocal';
+const LoadableExplorePage = Loadable({
+    loader: () => import('./container'),
+    loading: ((props:any) => null)
+})
 
-const styles = require('./explore.css');
-
-export default class ExplorePage extends React.Component<any, any>{
-    render(){
-        return(
-            <div>
-                <ExploreTopic />
-            </div>
-        )
-    }
-}
+export default LoadableExplorePage;

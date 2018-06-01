@@ -3,7 +3,11 @@
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "esnext",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
     "experimentalDecorators": true,
     "jsx": "react",
     "allowJs": true

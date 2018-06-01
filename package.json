@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "webpack-serve",
-    "start:dev": "webpack-dev-server"
+    "build": "rm -r dist/static && webpack --config webpack.prod.js",
+    "build:dev": "rm -r dist/static && webpack --config webpack.dev.js",
+    "start:dev": "webpack-dev-server --open --config webpack.dev.js"
   },
   "author": "zurex",
   "license": "ISC",
@@ -15,11 +16,13 @@
     "mobx-react": "^5.1.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-loadable": "^5.4.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "@types/react-dom": "^16.0.5",
+    "@types/react-loadable": "^5.4.0",
     "@types/react-router-dom": "^4.2.6",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
@@ -28,9 +31,11 @@
     "ts-loader": "^4.3.0",
     "typescript": "^2.8.3",
     "typings-for-css-modules-loader": "^1.7.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.9.1",
     "webpack-cli": "^2.1.4",
     "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2",
     "webpack-serve": "^1.0.2"
   }
 }
